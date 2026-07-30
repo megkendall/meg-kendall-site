@@ -4,15 +4,37 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Meg Kendall</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,500&family=Poppins:wght@400;500;600;700&family=Lora:ital@1&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <!-- ============================================================ -->
+<!-- SITE NAV -->
+<!-- ============================================================ -->
+<nav class="site-nav" id="site-nav">
+  <a href="#top" class="site-nav-logo" aria-label="Back to top">
+    <img src="uploads/logo-mk-monogram.png" alt="Meg Kendall monogram">
+  </a>
+  <button type="button" class="site-nav-toggle" id="site-nav-toggle" aria-expanded="false" aria-controls="site-nav-links" aria-label="Toggle menu">
+    <span></span><span></span><span></span>
+  </button>
+  <ul class="site-nav-links" id="site-nav-links">
+    <li><a href="#the-journey">Journey</a></li>
+    <li><a href="#climate-hub-highlights">The Climate Hub</a></li>
+    <li><a href="#portfolio">Portfolio</a></li>
+    <li><a href="#core-beliefs">Beliefs</a></li>
+    <li><a href="#beyond-work">Beyond Work</a></li>
+  </ul>
+</nav>
+
+<!-- ============================================================ -->
 <!-- HERO -->
 <!-- ============================================================ -->
-<header>
-  <p>WRITER · ANALYST · LAKEWOOD, OH</p>
+<header id="top">
   <h1>Meg Kendall</h1>
+  <p>WRITER · ANALYST · LAKEWOOD, OH</p>
   <p>Meg Kendall is a multi-passionate writer and analyst. She is fascinated by the intersection of technology and nature, with a keen interest in the carbon markets, environmental policy, and a reverence for the more-than-human world.</p>
   <!-- hero background image: uploads/pexels-cottonbro-studio-4272625.jpg -->
 </header>
@@ -25,9 +47,9 @@
 
   <h3>Education</h3>
   <ul>
-    <li>BS — Botany</li>
-    <li>MS — Orientation and Mobility</li>
-    <li>MPA — Master of Public Administration (In Progress)</li>
+    <li><span class="edu-mark">BS</span><span class="edu-body"><span class="edu-title">Botany</span></span></li>
+    <li><span class="edu-mark">MS</span><span class="edu-body"><span class="edu-title">Orientation and Mobility</span></span></li>
+    <li><span class="edu-mark">MPA</span><span class="edu-body"><span class="edu-title">Master of Public Administration</span><span class="edu-status">In Progress</span></span></li>
   </ul>
 
   <h3>Work</h3>
@@ -58,7 +80,7 @@
   <p>Today, I'm interested in bringing that work closer to home. I'm adding the language of public administration and data analysis to the languages of science and story I already speak.</p>
 
   <blockquote>
-    <p>It's less a career change so much as a return to scale — from global markets to the community I live in, from abstraction to something I can walk. I'd like to enjoy the view.</p>
+    <p>I'm looking at a return to scale — from global markets to the community I live in, from abstraction to something I can walk. I'd like to enjoy the view.</p>
   </blockquote>
 </section>
 
@@ -86,7 +108,7 @@
 <!-- LOGO BAR -->
 <!-- ============================================================ -->
 <section id="clients-partners">
-  <h2>Selected Clients &amp; Partners</h2>
+  <h2>Selected Clients and Partners</h2>
   <ul>
     <li><img src="uploads/TCH Brand Logos (2).png" alt="MittiLabs" height="38"></li>
     <li><img src="uploads/37.png" alt="Supercritical" height="38"></li>
@@ -212,19 +234,32 @@
 
   <p>I'm an avid reader, writer, and student of poetry. I know of no better way to alchemize magic; to say what can't otherwise be said.</p>
 
-  <ul>
-    <li><img src="uploads/poem-in-this-winter-there-is-only-snow.png" alt="Poem: In this winter, there is only snow (after Arthur Sze)" width="150"></li>
-    <li><img src="uploads/poem-how-i-would-paint-happiness.png" alt="Poem: How I Would Paint Happiness" width="150"></li>
-    <li><img src="uploads/poem-sheer-red-and-tasting-of-dream.png" alt="Poem: Sheer red and tasting of dream" width="150"></li>
-  </ul>
+  <div class="poem-carousel" data-poem-carousel>
+    <div class="poem-carousel-track">
+      <button type="button" class="poem-carousel-btn poem-carousel-prev" aria-label="Previous poem">‹</button>
+      <ul>
+        <li class="poem-carousel-slide is-active"><img src="uploads/poem-in-this-winter-there-is-only-snow.png" alt="Poem, &quot;In this winter, there is only snow,&quot; after Arthur Sze. A cold fog hugs the ground, and warms— An ad says Canada wants me— The cunning crow reflects sun and sky in its feathers— Soon the valley will speckle with bluebell; purple cress; hepatica— Earth will do its best to mitigate: phlox and wood poppy for our troubles— Do you remember how the train tracks seemed when we were young? In a twinkling: trillium— Myrmecochory brings its flower, and we rejoice— [Bowing down, we cry thanks to the ostentatious ant] Against a pale blue sky, a silhouette swoons— A mother slips on the ice— Even regret is lovely—"></li>
+        <li class="poem-carousel-slide"><img src="uploads/poem-how-i-would-paint-happiness.png" alt="Poem, &quot;How I Would Paint Happiness.&quot; A matched embrace; flower roots, entangled; verdant hills and the smell of jasmine; crickets, which fly, and flee past your ankles fold-up chairs and the smell of grilled zucchini a sky seared pink and tens of thousands singing in exquisite unison"></li>
+        <li class="poem-carousel-slide"><img src="uploads/poem-sheer-red-and-tasting-of-dream.png" alt="Poem, &quot;Sheer red and tasting of dream.&quot; We laugh with light inside as juice of strawberry dribbles down our fragile wrists; dewy lips dimpled with seed. Inside concinnity of songbird, I can almost hear your thoughts: cold lucidity // babble of stream // capture me: I go willingly. You're still with me. Lost in melodic trill of wood thrush; chitter of red-eyed vireo; chick-burr of scarlet tanager We float up up up into dappled contrast of shimmer on strawberry leaf, refracting glimmers; trailing in our wake"></li>
+      </ul>
+      <button type="button" class="poem-carousel-btn poem-carousel-next" aria-label="Next poem">›</button>
+    </div>
+    <div class="poem-carousel-dots">
+      <button type="button" class="poem-carousel-dot is-active" aria-label="Show poem 1 of 3"></button>
+      <button type="button" class="poem-carousel-dot" aria-label="Show poem 2 of 3"></button>
+      <button type="button" class="poem-carousel-dot" aria-label="Show poem 3 of 3"></button>
+    </div>
+  </div>
 
   <p>I like wild and liminal spaces, spring ephemerals, and cappuccinos. I love watching old tv shows while making french beaded flowers.</p>
-  <p>I'm newly obsessed with creating native plant habitats; I live in a green house and have killed its front lawn in favor of wild strawberry, azure bluet, wild bergamot, dense blazing star, little bluestem, tall thimbleweed, culver's root, and more (year one pictured!). I think such actions should be incorporated into city planning. I like a wild garden. I'm obsessed with flowers: my favorites include chicory and goldenrod. (Chicory brightens up the roadside rubble; goldenrod reminds me that this world can spin gold yet.)</p>
+  <p>I'm newly obsessed with creating native plant habitats; I live in a green house and have killed its front lawn in favor of wild strawberry, azure bluet, wild bergamot, dense blazing star, little bluestem, tall thimbleweed, culver's root, and more (year one pictured!). I think such actions should be incorporated into city planning. I like a wild garden. I'm obsessed with flowers: my favorites include <span class="floral-chicory">chicory</span> and <span class="floral-goldenrod">goldenrod</span>. (Chicory brightens up the roadside rubble; goldenrod reminds me that this world can spin gold yet.)</p>
 
-  <img src="uploads/IMG_0438 (1).jpeg" alt="French beaded flowers" width="150">
-  <img src="uploads/IMG_2349.jpeg" alt="Native plant garden" width="150">
+  <div class="photo-pair">
+    <img src="uploads/IMG_0438 (1).jpeg" alt="French beaded flowers" width="240">
+    <img src="uploads/IMG_2349.jpeg" alt="Native plant garden" width="240">
+  </div>
 
-  <p>I resonate with Rebecca Solnit's view of “stubborn hope.” My family has three cats: Lilah, Piggy, and Zohran Mamdani. And I love Toblerones.</p>
+  <p>I resonate with Rebecca Solnit's view of “stubborn hope.” My family has three cats: Lilah, Piggy, and Zohran Mamdani. And I love Toblerones.<br><br>You can reach me <a href="mailto:meg@megkendall.com">meg@megkendall.com</a>.</p>
 
   <p>— MK</p>
 </section>
@@ -234,14 +269,88 @@
 <!-- ============================================================ -->
 <section id="photo-strip">
   <ul>
-    <li><img src="uploads/IMG_2451.jpeg" alt="" width="150"></li>
-    <li><img src="uploads/IMG_2392.jpeg" alt="" width="150"></li>
-    <li><img src="uploads/IMG_0607.jpeg" alt="" width="150"></li>
-    <li><img src="uploads/IMG_1060.JPG" alt="" width="150"></li>
-    <li><img src="uploads/IMG_0570.jpeg" alt="" width="150"></li>
-    <li><img src="uploads/8422DA7B-9F3D-4FFB-A684-485A2838D9D1.JPG" alt="" width="150"></li>
+    <li><img src="uploads/IMG_2451.jpeg" alt="A chicory flower blooming through a dried leaf in the grass" width="150"></li>
+    <li><img src="uploads/IMG_2392.jpeg" alt="An open watercolor sketchbook with a painting of crocus flowers, sitting on a sunlit wood floor" width="150"></li>
+    <li><img src="uploads/IMG_0607.jpeg" alt="Meg smiling outdoors in the desert near a cholla cactus" width="150"></li>
+    <li><img src="uploads/IMG_1060.JPG" alt="Blue sky with white clouds and a sunbeam" width="150"></li>
+    <li><img src="uploads/IMG_0570.jpeg" alt="A flowering palo verde tree with yellow blossoms against a blue sky" width="150"></li>
+    <li><img src="uploads/8422DA7B-9F3D-4FFB-A684-485A2838D9D1.JPG" alt="White spring blossoms on bare branches in front of a brick apartment building" width="150"></li>
   </ul>
 </section>
 
+<script>
+(function () {
+  var toggle = document.getElementById('site-nav-toggle');
+  var links = document.getElementById('site-nav-links');
+  if (!toggle || !links) return;
+
+  function closeMenu() {
+    links.classList.remove('is-open');
+    toggle.setAttribute('aria-expanded', 'false');
+  }
+
+  toggle.addEventListener('click', function () {
+    var isOpen = links.classList.toggle('is-open');
+    toggle.setAttribute('aria-expanded', String(isOpen));
+  });
+
+  Array.prototype.forEach.call(links.querySelectorAll('a'), function (link) {
+    link.addEventListener('click', closeMenu);
+  });
+})();
+
+(function () {
+  var carousel = document.querySelector('[data-poem-carousel]');
+  if (!carousel) return;
+  var slides = carousel.querySelectorAll('.poem-carousel-slide');
+  var dots = carousel.querySelectorAll('.poem-carousel-dot');
+  var prevBtn = carousel.querySelector('.poem-carousel-prev');
+  var nextBtn = carousel.querySelector('.poem-carousel-next');
+  var index = 0;
+
+  function show(i) {
+    index = (i + slides.length) % slides.length;
+    slides.forEach(function (slide, n) {
+      slide.classList.toggle('is-active', n === index);
+    });
+    dots.forEach(function (dot, n) {
+      dot.classList.toggle('is-active', n === index);
+    });
+  }
+
+  prevBtn.addEventListener('click', function () { show(index - 1); });
+  nextBtn.addEventListener('click', function () { show(index + 1); });
+  dots.forEach(function (dot, n) {
+    dot.addEventListener('click', function () { show(n); });
+  });
+})();
+
+(function () {
+  // Slow, minimal fade-in as each section enters the viewport.
+  // Progressive enhancement: the hidden starting state only exists in
+  // CSS under body.fade-in-ready, which we add ONLY here — so a JS
+  // failure, an unsupported browser, or a reduced-motion preference
+  // all fall back to every section simply being visible immediately.
+  var reduceMotion = window.matchMedia &&
+    window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if (reduceMotion || !('IntersectionObserver' in window)) return;
+
+  document.body.classList.add('fade-in-ready');
+
+  var sections = document.querySelectorAll('section');
+  var observer = new IntersectionObserver(function (entries) {
+    entries.forEach(function (entry) {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('is-visible');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.15, rootMargin: '0px 0px -60px 0px' });
+
+  Array.prototype.forEach.call(sections, function (section) {
+    observer.observe(section);
+  });
+})();
+</script>
 </body>
 </html>
