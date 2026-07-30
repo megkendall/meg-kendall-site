@@ -578,6 +578,8 @@ header p:last-of-type {
    CLIMATE HUB HIGHLIGHTS
    ============================================================ */
 
+#climate-hub-highlights h2 { margin-bottom: var(--space-11); }
+
 #climate-hub-highlights p {
   font-family: var(--font-body);
   font-size: var(--fs-caption);
@@ -643,7 +645,7 @@ header p:last-of-type {
   width: 8px;
   height: 8px;
   border-radius: 50%;
-  background: var(--color-accent-gold);
+  background: var(--color-heading); /* olive #676637 — same brand green used for section headings / Core Beliefs bg */
 }
 
 /* ============================================================
