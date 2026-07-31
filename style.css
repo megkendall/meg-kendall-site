@@ -1020,6 +1020,42 @@ header p:last-of-type {
 }
 
 /* ============================================================
+   FOOTER — quiet closing bar
+   ============================================================ */
+
+.site-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-8);
+  padding: var(--space-15) var(--gutter-x);
+  background: var(--color-bg-alt);
+}
+
+.site-footer-logo {
+  display: block;
+  flex-shrink: 0;
+  line-height: 0;
+}
+.site-footer-logo img {
+  height: 30px;
+  width: auto;
+  transition: opacity 0.25s ease;
+}
+.site-footer-logo:hover img { opacity: 0.7; }
+
+.site-footer-links {
+  font-family: var(--font-body);
+  font-weight: var(--fw-semibold);
+  font-size: var(--fs-small);
+  letter-spacing: var(--ls-label);
+  text-transform: uppercase;
+  color: var(--color-text-muted);
+}
+.site-footer-links a { color: var(--color-text-muted); }
+.site-footer-links a:hover { color: var(--color-accent-rust-text); }
+
+/* ============================================================
    RESPONSIVE — tablet (≤860px)
    Multi-column sections that don't have room for their full grid
    collapse here; the nav's own hamburger breakpoint (768px) sits
@@ -1110,4 +1146,13 @@ header p:last-of-type {
   .poem-carousel-slide img { max-height: 340px; }
   .poem-carousel-prev { order: 2; }
   .poem-carousel-next { order: 3; }
+
+  /* Footer: stack and center instead of the desktop side-by-side row. */
+  .site-footer {
+    flex-direction: column;
+    text-align: center;
+    gap: var(--space-6);
+    padding-top: var(--space-13);
+    padding-bottom: var(--space-13);
+  }
 }
