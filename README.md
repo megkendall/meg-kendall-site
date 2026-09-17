@@ -9,10 +9,8 @@ selected clients, portfolio pieces, and ongoing coursework in data analysis and 
 
 ## Built AI-assisted
 
-This site is also a portfolio piece in its own right: it was designed and built collaboratively with
-Claude, from page structure and copy through to layout and responsive styling. It's included here as a
-working example of AI-assisted front-end development — plain, dependency-free HTML/CSS, iterated on
-through conversation rather than a design tool or framework.
+This site was designed and built collaboratively with Claude, from page structure through to layout 
+and responsive styling. It's included here as a working example of AI-assisted front-end development.
 
 ## Stack
 
@@ -27,13 +25,3 @@ index.html      Page markup, organized into commented sections (hero, journey, p
 style.css       Styles, organized to mirror the HTML sections, with a design-tokens block up top
 uploads/        Images (photos, client logos, poem graphics)
 ```
-
-## Running locally
-
-No build tooling required — open `index.html` directly in a browser, or serve the directory:
-
-```bash
-python3 -m http.server 8000
-```
-
-Then visit `http://localhost:8000`.
