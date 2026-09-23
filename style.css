@@ -432,6 +432,17 @@ header p:first-of-type {
   letter-spacing: var(--ls-label-lg);
   text-transform: uppercase;
   color: var(--color-accent-sage);
+  margin-bottom: var(--space-2);
+}
+
+header .hero-location {
+  font-family: var(--font-body);
+  font-weight: var(--fw-regular);
+  font-size: var(--fs-small);
+  letter-spacing: var(--ls-label-lg);
+  text-transform: uppercase;
+  color: var(--color-light);
+  opacity: 0.7;
   margin-bottom: var(--space-9);
 }
 
